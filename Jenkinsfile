@@ -17,7 +17,6 @@ pipeline {
                     app = docker.build("amaizingcrazy/train-schedule")
                     app.inside {
                         sh sleep 10
-                        sh 'echo $(curl localhost:8080)'
                     }
                 }
             }
