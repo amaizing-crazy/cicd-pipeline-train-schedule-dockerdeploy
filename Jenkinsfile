@@ -15,9 +15,6 @@ pipeline {
             steps {
                 script {
                     app = docker.build("amaizingcrazy/train-schedule")
-                    app.inside {
-                        sh sleep 10
-                    }
                 }
             }
         }
